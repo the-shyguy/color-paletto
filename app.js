@@ -251,7 +251,6 @@ function savePalette(e) {
   });
 
   //Generate Object
-  //*1
   // const paletteObjects = JSON.parse(localStorage.getItem("palettes"));
   // let paletteNr;
   // if (paletteObjects) {
@@ -344,7 +343,7 @@ function getLocal() {
 
     savedPalettes = [...paletteObjects];
     paletteObjects.forEach(paletteObj => {
-        
+
       //Generate the palette for Library
       const palette = document.createElement("div");
       palette.classList.add("custom-palette");
