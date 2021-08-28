@@ -7,6 +7,16 @@
 body {
   font-family: "Mulish", sans-serif;
   color: rgb(51, 51, 51);
+  animation: loading 1.5s;
+}
+
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 button {
