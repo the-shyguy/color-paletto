@@ -19,6 +19,31 @@ body {
   }
 }
 
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  font-size: 13rem;
+  font-family: "Sigmar One", cursive;
+  background: rgba(255, 255, 255, 0.5);
+  animation: inner-loader 1s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes inner-loader {
+  0% {
+    opacity: 0.7;
+    font-size: 7rem;
+  }
+  100% {
+    opacity: 0;
+    font-size: 13rem;
+  }
+}
+
 button {
   font-family: "Mulish", sans-serif;
 }
