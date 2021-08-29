@@ -136,10 +136,18 @@ svg {
   margin: 1rem;
   padding: 1rem 2rem;
   background: rgb(31, 33, 63);
-  border: none;
+  border: 2px solid rgb(31, 33, 63);
   color: #fff;
   cursor: pointer;
   border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.panel button:hover,
+.panel button:active {
+  background: #fff;
+  color: rgb(31, 33, 63);
+  border: 2px solid rgb(31, 33, 63);
 }
 
 .panel p {
